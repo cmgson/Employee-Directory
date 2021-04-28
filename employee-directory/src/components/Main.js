@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import DataArea from "./DataArea";
+import Table from "../components/Table";
 
 class Main extends Component {
     render() {
         return (
             <>
-                <DataArea />
+                <Table />
             </>
         );
     }
