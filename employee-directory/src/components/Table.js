@@ -36,9 +36,18 @@ class Table extends Component {
         } else if (b[heading] === undefined) {
           return -1;
         } else if (heading === "name") {
+            console.log(a[heading].first.localeCompare(b[heading].first))
           return a[heading].first.localeCompare(b[heading].first);
         } else {
-          return a[heading] - b[heading];
+            if ( a[heading] < b[heading]) {
+                return -1;
+              }
+              if ( a[heading] > b[heading]) {
+                return 1;
+              }
+
+              return 0;
+          
         }
       } else {
         if (a[heading] === undefined) {
@@ -48,7 +57,14 @@ class Table extends Component {
         } else if (heading === "name") {
           return b[heading].first.localeCompare(a[heading].first);
         } else {
-          return b[heading] - a[heading];
+            if ( a[heading] > b[heading]) {
+                return -1;
+              }
+              if ( a[heading] < b[heading]) {
+                return 1;
+              }
+
+              return 0;
         }
       }
     };
