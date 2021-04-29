@@ -5,9 +5,9 @@ import API from "../utils/API";
 
 class Table extends Component {
   state = {
-    users: [{}],
+    users: [],
     order: "descend",
-    filteredUsers: [{}],
+    filteredUsers: [],
   };
 
   headings = [
@@ -36,7 +36,7 @@ class Table extends Component {
         } else if (b[heading] === undefined) {
           return -1;
         } else if (heading === "name") {
-          return a[heading].first.localCompare(b[heading].first);
+          return a[heading].first.localeCompare(b[heading].first);
         } else {
           return a[heading] - b[heading];
         }

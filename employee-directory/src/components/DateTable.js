@@ -8,7 +8,7 @@ function DataTable({ headings, users, sortingHandler }) {
         id="table"
         className="table table-striped table-hover table-condensed"
       >
-        <thread>
+        <thead>
           <tr>
             {headings.map(({ name, width }) => {
               return (
@@ -25,7 +25,7 @@ function DataTable({ headings, users, sortingHandler }) {
               );
             })}
           </tr>
-        </thread>
+        </thead>
 
         <TableBody users={users} />
       </table>

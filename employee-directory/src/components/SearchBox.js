@@ -8,7 +8,7 @@ function SearchBox({ searchHandler }) {
                 className='form-control'
                 type='search'
                 placeholder='Search'
-                inChange={e => searchHandler(e)} />
+                onChange={e => searchHandler(e)} />
             </form>
         </div>
     )
