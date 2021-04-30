@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+//formats dob
 function TableBody({ users }) {
     function formatDate(date) {
         const dateArray = date.split('-');
@@ -11,7 +13,7 @@ function TableBody({ users }) {
         return formattedDate;
 
     }
-
+//returns table with rows that are mapped with proper user fields
     return (
         <tbody>
             {users[0] !== undefined && users[0].name !== undefined ? (

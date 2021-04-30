@@ -8,6 +8,7 @@ function DataTable({ headings, users, sortingHandler }) {
         id="table"
         className="table table-striped table-hover table-condensed"
       >
+      {/* maps each heading with desired width to each column */}
         <thead>
           <tr>
             {headings.map(({ name, width }) => {
@@ -26,7 +27,7 @@ function DataTable({ headings, users, sortingHandler }) {
             })}
           </tr>
         </thead>
-
+{/* pushes the users into tablebody */}
         <TableBody users={users} />
       </table>
     </div>

@@ -9,7 +9,7 @@ class Table extends Component {
     order: "descend",
     filteredUsers: [],
   };
-
+// array of objects to create headings for columns
   headings = [
     { name: "Image", width: "10%" },
     { name: "Name", width: "10%" },
@@ -17,7 +17,7 @@ class Table extends Component {
     { name: "Email", width: "20%" },
     { name: "DOB", width: "10%" },
   ];
-
+//handles which direction to reorder
   sortingHandler = (heading) => {
     if (this.state.order === "descend") {
       this.setState({
@@ -28,7 +28,7 @@ class Table extends Component {
         order: "descend",
       });
     }
-
+//comparison function to sort
     const compare = (a, b) => {
       if (this.state.order === "ascend") {
         if (a[heading] === undefined) {
@@ -70,7 +70,7 @@ class Table extends Component {
     const sortedUsers = this.state.filteredUsers.sort(compare);
     this.setState({ filteredUsers: sortedUsers });
   };
-
+//search handler which takes in the input event and filters through users to narrow return
   searchHandler = (e) => {
     console.log(e.target.value);
     const filter = e.target.value;
