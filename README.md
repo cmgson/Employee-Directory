@@ -1,55 +1,89 @@
-# Unit 19 React Homework: Employee Directory
 
-## Overview
+   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
 
-## User Story
+# <div align='center'> **Employee-Directory** </div>
 
-* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+--- 
+<img src="employee-directory/assets/frontpage.png">
+--- 
 
-## Business Context
+## **Table Of Contents** 
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+---
 
-## Acceptance Criteria
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+6. [Review and Contribute](#github)
+--- 
 
-Given a table of random users generated from the [Random User API](https://randomuser.me/), when the user loads the page, a table of employees should render. 
 
-The user should be able to:
+## <div align ='center'> <a name="description"></a> **Description** </div> 
 
-  * Sort the table by at least one category
+--- 
 
-  * Filter the users by at least one property.
+<p>  This is an employee directory built with react.  The UI is broken into components, state management, and responds to user events.</p>
 
-## Commit Early and Often
+--- 
+ 
+## <div align ='center'> <a name="installation"></a> **Installation** </div>
+--- 
+ 
+_The app deployment is linked below._
+ <ol> <li>To install locally you will need to clone the repo and run npm i to install all dependencies.
+ </li>
+  <li> Next, input npm start in the command line in order to open the dev server and view the app in the browser with the localhost:3000.
+  </li>
+</ol>
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+--- 
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+## <div align ='center'> <a name="usage"></a> **Usage** </div>
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+--- 
 
-Follow these guidelines for committing:
+_There are a few interactive portions to this application._
+<ul> 
+   <li>
+      Starting from the top the user will be able to narrow the return by searching with the name field.
+   </li> 
+   <li>
+      The return is reduced dynamically as the user enters more characters.
+   </li>
+   <li>
+      The columns themselves are also interactive and resort upon clicking them.
+   </li>
+   <li>
+      They are initially sorted in ascending order by name.
+  </li>
+   <li>
+      If the fields are clicked they will return the reverse sort in descending order.
+   </li>
+</ul>
 
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+--- 
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+## <div align ='center'> <a name="contributing"></a> **Contributing** </div>
 
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
+--- 
 
-* Test your application before you commit to ensure functionality at every step in the development process
+The license is attached if you are interested in contributing the github and my information are provided at the bottom.
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
+--- 
 
-* Deploy this site to GitHub Pages using the [Create React App docs for deployment.](https://create-react-app.dev/docs/deployment/#github-pages)
+## <div align ='center'> <a name="github"></a> **Github and Email** </div>
 
-* **Important**: Be sure to push your codebase to GitHub and **NOT** your built and deployed code. Ensure this happens by following the above instructions and using the `gh-pages` branch to host the deployed application's code.
+--- 
 
-## Submission on BCS
+## <div align ='center'> **Review and contribute here**</div>
 
-You are required to submit the following:
+### _Github:_ [Employee-Directory](https://github.com/cmgson/Employee-Directory)
 
-* the URL to the deployed application
+### _Deployed App:_ [cmgson.github.io/Employee-Directory](https://cmgson.github.io/Employee-Directory/)
 
-* the URL to the Github repository
+
+### _Email:_ cmgson1@gmail.com
+
+--- 
